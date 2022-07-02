@@ -13,3 +13,6 @@ webhook() {
 pw() {
     cat /dev/urandom | tr -dc '[:print:]' | fold -w "${1:-32}" | head -n 1
 }
+
+# for git
+source ./ssh_agent.sh
