@@ -15,4 +15,4 @@ pw() {
 }
 
 # for git
-source ./ssh_agent.sh
+source ~/dotfiles/ssh_agent.sh
