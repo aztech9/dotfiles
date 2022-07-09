@@ -13,4 +13,8 @@ what you can do:
 thanks to the following people for helping with the scripts:
 * snowfag for improving pw()
 
+if you want to use the ssh alias generator, place all your hosts in hosts.txt. an sample hosts.txt can be found in hosts.sample
 
+syntax: <server_name> <hostname>:[port] [kwargs]
+
+ssh aliases are rebuilt on every startup with the ssh_agent boot. if you need to rebuild your aliases use the rebuild_hosts alias or rebuild_hosts.sh.

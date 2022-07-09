@@ -17,9 +17,16 @@ pw() {
 # for git
 source ~/dotfiles/ssh_agent.sh
 
-# if you want to use your own port or 
+# if you want to use your own port or
 # pass any args to ssh-copy-id, add at before the host
-# ex: sshadd -p 1337 aztech@root.com 
+# ex: sshadd -p 1337 aztech@root.com
 # dont blame me blame ssh-copy-id author.
 
-alias sshadd="ssh-copy-id -i ~/.ssh/id_ed25519.pub $@"
+alias sshadd='ssh-copy-id -i ~/.ssh/id_ed25519.pub $@'
+alias rebuild_hosts="~/dotfiles/rebuild_hosts.sh"
+
+if [ ! -f ~/dotfiles/hosts.sh ]; then
+    source ~/dotfiles/rebuild_hosts.sh
+else
+    source ~/dotfiles/hosts.sh
+fi;
