@@ -11,7 +11,6 @@ function start_agent {
     chmod 600 "${SSH_ENV}"
     . "${SSH_ENV}" > /dev/null
     /usr/bin/ssh-add;
-    source ~/dotfiles/rebuild_hosts.sh
 }
 
 # Source SSH settings, if applicable
