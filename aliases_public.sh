@@ -22,7 +22,7 @@ source ~/dotfiles/ssh_agent.sh
 # ex: sshadd -p 1337 aztech@root.com
 # dont blame me blame ssh-copy-id author.
 
-alias sshadd='ssh-copy-id -i ~/.ssh/id_ed25519.pub $@'
+alias sshadd="ssh-copy-id -i ~/.ssh/id_ed25519.pub"
 alias rebuild_hosts="~/dotfiles/rebuild_hosts.sh"
 
 if [ ! -f ~/dotfiles/hosts.sh ]; then
